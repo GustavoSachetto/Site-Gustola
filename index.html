@@ -1,0 +1,106 @@
+<html lang="br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shorcut icon" href="view/img/logo.jpg"> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">           
+        <link rel="stylesheet" href="view/css/style.css">
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <script src="view/js/script.js" defer></script>  
+        
+        <title>Gustola - Canal</title>
+    </head>
+    <body>
+        <header>            
+            <h1>GUSTOLA</h1>
+            
+            <button class="botao-menu" id="botao-menu"><img src="view/img/menu.png" class="imagem-menu"></button>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#1">Sobre</a></li>
+                    <li><a href="#2">Testes</a></li>
+                    <li><a href="#3">Videos</a></li>
+                    <li><a href="#4">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="banner">
+                <img src="view/img/jogos.jpg" alt="Jogos" class="jogos">
+                <article>
+                    <h2>Download de Jogos?</h2>
+                    <p>Ja tentou baixar aquele jogo expecifico e não achou ele em lugar nenhum? aqui está sua solução.</p>
+                    <a href="#">Saiba mais</a>
+                </article>    
+            </section>
+
+            <a id="1"></a>
+            <section class="sobre">                
+                <h3>Sobre</h3>
+                <p>Esse site trata de varios teste realizados na plataforma lga 775 onde eu testo diferentes combinações de peças em varios jogos.</p>
+                <a href="#">Ver mais</a>
+            </section>
+
+            <a id="2"></a>
+            <section class="testes">
+                <h3>Processadores Testados</h3>
+                <div class="organizando">
+                    <div>
+                        <img src="view/img/e7500.png" alt="C2D E7500" class="processador">
+                        <h4>Core 2 Duo E7500</h4>
+                        <p>2 Nucleos / 2.9ghz</p>
+                    </div>
+                    <div>
+                        <img src="view/img/q6600.png" alt="C2Q Q6600" class="processador">
+                        <h4>Core 2 Quad Q6600</h4>
+                        <p>4 Nucleos / 2.4ghz</p>
+                    </div>
+                    <div>
+                        <img src="view/img/l5420.png" alt="XEON L5420" class="processador">
+                        <h4>Xeon L5420</h4>
+                        <p>4 Nucleos / 2.5ghz</p>
+                    </div>
+                    <div>
+                        <img src="view/img/x5450.png" alt="XEON X5450" class="processador">
+                        <h4>Xeon X5450</h4>
+                        <p>4 Nucleos / 3.0ghz</p>
+                    </div>
+                </div>
+            </section>
+
+            <a id="3"></a>
+            <section class="canal">
+                <article>
+                    <h3 class="modelo">Confira mais videos</h3>
+                    <img src="view/img/canal.jpg" alt="Foto do Canal" class="inscritos">
+                    <a href="#">Conheça nosso canal</a>
+                </article>                
+                <div class="organizando">
+                    <div><iframe width="384" height="216" src="https://www.youtube.com/embed/YX_Tz7wUN0o" title="Video Um" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div><iframe width="384" height="216" src="https://www.youtube.com/embed/bK52-gF-GRQ" title="Video Dois" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    <div><iframe width="384" height="216" src="https://www.youtube.com/embed/uF0Nlkv7Xxo" title="Video Tres" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>                   
+                </div>
+            </section>
+
+            <a id="4"></a>
+            <section class="contato">
+                <h3 class="modelo">Contato</h3>
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">E-mail de Retorno</label>
+                        <input type="email" class="form-control" id="input" placeholder="name@example.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Assunto</label>
+                        <textarea class="form-control" id="texto" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" id="botao" disabled>Enviar</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <h5>Desenvolvido por Gustavo Sachetto.</h5>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,356 @@
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px 50px;
+}
+
+h1{
+    font: bold 47px arial, cursiva;
+    margin: 10px;
+    color: white;
+}
+
+.botao-menu{
+    display: none;
+    margin: 10px;
+    width: 70px;
+    background: transparent;
+    border: none;
+}
+
+.imagem-menu{
+    width: 70px;
+}
+
+nav > ul{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    list-style: none;
+}
+
+nav > ul> li{
+    margin-left: 10px;
+}
+
+li a{
+    text-decoration: none;
+    padding: 12px 20px;
+    font: normal 17px Verdana, Arial, Helvetica;
+    background-color: #1380c9;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 10px 20px;
+}
+
+li a:hover{
+    border: 2px solid white;
+    background-color: #1380c9a4;
+    transition: 500ms;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.jogos{
+    width: 100vw;
+    position: relative;
+}
+
+.banner > article{    
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    box-shadow: 1px 1px 40px #00000062;
+    background-color: #0000008e;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+h2{
+    font: bold 30px Verdana, cursiva;
+    color: white;
+    margin: 10px;    
+}
+
+p{
+    margin-top: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-align: center;
+    color: white;
+}
+
+.banner > article a{    
+    font: bold 20px Verdana, Arial, Helvetica;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 23px;
+    background-color: #2aa59b;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.banner > article a:hover{
+    color: #2aa59b;
+    background-color: white;
+    transition: 500ms;
+}
+
+.sobre{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: brown;
+    align-items: center;
+    padding: 60px 10px;
+}
+
+h3{
+    font: bold 25px Verdana, cursiva;
+    color: white;  
+}
+
+.sobre a{
+    font: normal 17px Verdana, Arial, Helvetica;
+    color: brown;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-top: 20px;
+    border: 1px solid transparent;
+}
+
+.sobre a:hover{
+    border: 1px solid white;
+    transition: 500ms;
+    background-color: transparent;
+    color: white;
+}
+
+.testes{
+    padding: 60px 10px;
+    position: relative;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: #2aa59b;
+}
+
+.processador{
+    width: 250px;
+}
+
+.testes > .organizando {
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h4{
+    font: bold 25px Verdana, cursiva;
+    color:white;
+}
+
+.canal > article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modelo{
+    color: black;
+    margin: 40px;
+}
+
+.canal > .organizando{
+    margin: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.canal a{
+    font: bold 20px Verdana, Arial, Helvetica;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 10px 23px;
+    background-color: brown;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.canal a:hover{
+    transition: 600ms;
+    transform: translateX(7px);
+}
+
+.canal a:active{
+    color: #4e4e4e;
+    background-color: #a0a0a0;
+    border: 1px solid #4e4e4e;
+    transition: 600ms;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+form > button{
+    color: white;    
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 20px; 
+    border: 1px solid transparent;   
+    background-color: #2665ac;    
+}
+
+form > button:disabled{
+    color: #4e4e4e;
+    border: 1px solid #4e4e4e;
+    background-color: #a0a0a0;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    padding: 30px;
+}
+
+h5{
+    color: white;
+}
+
+@media (max-width: 1270px){
+
+    header{
+        padding: 10px 40px;
+        flex-direction: column;
+    }
+
+    .botao-menu{
+        display: block;
+    }
+
+    .ativo{
+        display: flex;
+    }
+
+    nav{
+        display: none;
+    }
+
+    nav > ul{
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    nav > ul > li{
+        margin: 25px;
+    }
+
+    li > a{
+        font-size: 25px;
+        border: 2px solid #1380c9;
+        transition: 500ms;
+    }
+
+    .jogos{
+        display: none;
+    }
+
+    .banner{
+        background-color: black;
+    }
+
+    .banner > article{
+        position: relative;
+        border-radius: 0px;
+        margin-top: 0px;
+        background-color: black;
+        box-shadow: none;  
+        padding: 20px; 
+    }
+
+    .banner > article > a{
+        margin-bottom: 30px;
+    }
+
+    .testes > .organizando{
+        display: flex;
+        flex-direction: column;
+        align-items: center;     
+    }
+
+    .testes > .organizando > div{
+        padding: 20px;
+    }
+
+    .processador{
+        width: 200px;
+    }
+
+    .canal > article{
+        margin: 40px;
+    }
+
+    .inscritos{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100vw;
+        max-width: 620px;
+    }
+
+    .canal > .organizando{
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+    }
+
+    .canal > .organizando > div{
+        margin: 20px;
+    }
+
+    .modelo{
+        margin: 0px;
+    }
+}
